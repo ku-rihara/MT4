@@ -22,7 +22,7 @@ struct Vector3 {
     void operator+=(const Vector3& obj);
 };
 
-Vector3 Normnalize(const Vector3& v);  //正規化
+Vector3 Normalize(const Vector3& v);  //正規化
 
 Vector3 Multiply(const Vector3&v1, const float& v2);
 

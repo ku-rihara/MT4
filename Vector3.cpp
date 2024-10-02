@@ -108,7 +108,7 @@ float Length(const Vector3& v) {
 }
 
 //正規化
-Vector3 Normnalize(const Vector3& v) {
+Vector3 Normalize(const Vector3& v) {
 	Vector3 result;
 
 	float length = sqrtf(v.x * v.x + v.y * v.y + v.z * v.z);

@@ -11,6 +11,7 @@ struct Vector3 {
 
     Vector3 operator-(const Vector3& obj)const;
     Vector3 operator-(const float& obj)const;
+    Vector3 operator-() const;
 
     Vector3 operator*(const Vector3& obj)const;
     Vector3 operator*(const float& scalar)const;

@@ -32,15 +32,15 @@ Vector3 Vector3:: operator-(const Vector3& obj) const{
 
 }
 Vector3 Vector3:: operator-(const float& obj) const {
-
 	Vector3 result;
-
 	result.x = x - obj;
 	result.y = y - obj;
 	result.z = z - obj;
-
 	return result;
+}
 
+Vector3 Vector3::operator-() const {
+	return Vector3(-x, -y, -z);
 }
 
 Vector3 Vector3:: operator*(const Vector3& obj) const {
@@ -111,7 +111,8 @@ float Length(const Vector3& v) {
 Vector3 Normalize(const Vector3& v) {
 	Vector3 result;
 
-	float length = sqrtf(v.x * v.x + v.y * v.y + v.z * v.z);
+	float length =Length(v);
+
 	if (length != 0) {
 		result.x = v.x / length;
 		result.y = v.y / length;
